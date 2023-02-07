@@ -1,4 +1,4 @@
-FROM usdotfhwastol/carma-base:carma-system-4.2.0 as base_image
+FROM usdotfhwastol/carma-base:c1tenth-develop as base_image
 SHELL ["/bin/bash", "-c"]
 
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -9,7 +9,7 @@ LABEL org.label-schema.description="carma msgs bridge for the CARMA Platform"
 LABEL org.label-schema.vendor="Leidos"
 LABEL org.label-schema.version=${VERSION}
 LABEL org.label-schema.url="https://highways.dot.gov/research/research-programs/CARMA"
-LABEL org.label-schema.vcs-url="https://github.com/usdot-fhwa-stol/carma-msgs"
+LABEL org.label-schema.vcs-url="https://github.com/KBR-CARMA/carma-msgs"
 LABEL org.label-schema.vcs-ref=${VCS_REF}
 LABEL org.label-schema.build-date=${BUILD_DATE}
 
